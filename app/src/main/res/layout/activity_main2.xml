@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D59BDF"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/firstNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5B1ACF"
+        android:text="USER"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserImage" />
+
+    <ImageView
+        android:id="@+id/UserImage"
+        android:layout_width="118dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="15dp"
+        android:background="#5B1ACF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mr" />
+
+    <ImageButton
+        android:id="@+id/ChequeBookButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="WithdrawalActivity"
+        app:layout_constraintBottom_toTopOf="@+id/DepositMoneyButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/money" />
+
+    <ImageButton
+        android:id="@+id/DepositMoneyButton2"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="DepositActivity"
+        app:layout_constraintBottom_toTopOf="@+id/TransactionsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/money2" />
+
+    <ImageButton
+        android:id="@+id/TransactionsButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="TransferActivity"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordGenButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/eft" />
+
+    <ImageButton
+        android:id="@+id/PasswordGenButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="PasswordActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/random" />
+
+    <ImageButton
+        android:id="@+id/SettingsButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="SettingsActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/settings" />
+
+    <ImageButton
+        android:id="@+id/CalculateCreditButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="Calculate_creditActivity"
+        app:layout_constraintBottom_toTopOf="@+id/SettingsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/credit" />
+
+    <ImageButton
+        android:id="@+id/showDebtsButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="DebtsActivity"
+        app:layout_constraintBottom_toTopOf="@+id/CalculateCreditButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/debt" />
+
+    <ImageButton
+        android:id="@+id/AccountDetailsButton"
+        android:layout_width="196dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="Account_DetailsActivity"
+        app:layout_constraintBottom_toTopOf="@+id/showDebtsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bank" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5B1ACF"
+        android:text="Cheque book"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/ChequeBookButton"
+        app:layout_constraintStart_toStartOf="@+id/ChequeBookButton" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5B1ACF"
+        android:text="Deposit Money"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/DepositMoneyButton2"
+        app:layout_constraintStart_toStartOf="@+id/DepositMoneyButton2" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5B1ACF"
+        android:text="Show Debts"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/showDebtsButton"
+        app:layout_constraintStart_toStartOf="@+id/showDebtsButton" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5B1ACF"
+        android:text="Calculate Credit"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/CalculateCreditButton"
+        app:layout_constraintStart_toStartOf="@+id/CalculateCreditButton" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5B1ACF"
+        android:text="Transactions"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/TransactionsButton"
+        app:layout_constraintStart_toStartOf="@+id/TransactionsButton" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5B1ACF"
+        android:text="Generate Password"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordGenButton"
+        app:layout_constraintStart_toStartOf="@+id/PasswordGenButton" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5B1ACF"
+        android:text="User Settings"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/SettingsButton"
+        app:layout_constraintStart_toStartOf="@+id/SettingsButton" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5B1ACF"
+        android:text="Account Details"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/AccountDetailsButton"
+        app:layout_constraintStart_toStartOf="@+id/AccountDetailsButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

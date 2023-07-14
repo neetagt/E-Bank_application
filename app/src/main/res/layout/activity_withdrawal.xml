@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D59BDF"
+    tools:context=".WithdrawalActivity">
+
+    <Button
+        android:id="@+id/WithdrawalCancelButton"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="cancel"
+        android:text="CANCEL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/CheckAccountButton"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="balance"
+        android:text="WITHDRAW"
+        app:layout_constraintBottom_toTopOf="@+id/WithdrawalCancelButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#5B1ACF"
+        android:text="Withdrawal amount"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/WithdrawalAmountText"
+        app:layout_constraintStart_toStartOf="@+id/WithdrawalAmountText" />
+
+    <EditText
+        android:id="@+id/WithdrawalAmountText"
+        android:layout_width="286dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="80dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="0.00"
+        android:inputType="number"
+        android:textColor="#070707"
+        app:layout_constraintBottom_toTopOf="@+id/CheckAccountButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

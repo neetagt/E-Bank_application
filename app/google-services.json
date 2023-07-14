@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "960040524456",
+    "project_id": "edgebank-cf97d",
+    "storage_bucket": "edgebank-cf97d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960040524456:android:33bc512ad3fac34ac3009d",
+        "android_client_info": {
+          "package_name": "com.emreguven.burmetembank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960040524456-gcmq1006n255dcm8ascu695osvuhlco4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS5fQuTUbNBlAExKfNf_PaPr1MV7293SM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960040524456-gcmq1006n255dcm8ascu695osvuhlco4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
